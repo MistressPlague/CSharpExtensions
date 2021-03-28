@@ -26,16 +26,6 @@ namespace Libraries
             return NewList;
         }
 
-        internal static string GetAllTextAfterTerm(string term, string entiretext)
-        {
-            if (string.IsNullOrEmpty(term) || string.IsNullOrEmpty(entiretext))
-            {
-                return "";
-            }
-
-            return entiretext.Substring(entiretext.IndexOf(term));
-        }
-
         internal static string MakeAlphaNumeric(this string input, params char[] exceptions)
         {
             var charArray = input.ToCharArray();

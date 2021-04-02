@@ -87,6 +87,19 @@ namespace Libraries
 
             return true;
         }
+        
+        //A Safe Replace Method
+        internal static string ReplaceAtIndex(this string Source, string oldChar, string newChar, int indexJustBeforeoldChar)
+        {
+            if (indexJustBeforeoldChar == -1)
+            {
+                return Source;
+            }
+
+            string result = Source.Remove(indexJustBeforeoldChar, oldChar.Length).Insert(indexJustBeforeoldChar, newChar);
+
+            return result;
+        }
 
         internal static string ReplaceLast(this string Source, string oldChar, string newChar)
         {

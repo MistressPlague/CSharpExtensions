@@ -14,3 +14,4 @@ GetTextAfter(this string sourceString, string getTextAfterThis, int lengthOfWhat
 GetToEndOfLine(this string sourceString) | Gets ALL Text In A String To The First NewLine
 ContainsAllOf(this string input, string[] terms) | Checks If All Of The Terms You Define Are In A String
 ConvertToString(this byte[] array) | Converts A byte[] To A String
+ReplaceAtIndex(this string Source, string oldChar, string newChar, int indexJustBeforeoldChar) | Replaces Text ONLY At The Specified Starting Index - Use This As A Safe Replace Method

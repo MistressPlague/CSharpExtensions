@@ -6,7 +6,7 @@ Method Name | Function
 ------------ | -------------
 GetFromTo<T>(this List<T> list, int from, int to) | Retrieves All Items In A List Starting From **from** To **to** - Useful For Making Pages From A List
 MakeAlphaNumeric(this string input, params char[] exceptions) | Effectively Sanitizes A String To AlphaNumeric - You Can Define Some Exceptions To Allow Past The Sanitization
-MultilineContainsExactTextToLower(this string multilineinput, string containsthis) | Checks A Multiline String For Exact Text You Define - Check In Lowercase
+MultilineContainsExactTextToLower(this string multilineinput, string containsthis) | Checks A Multiline String For Exact Text You Define - Checks In Lowercase
 ToRgb(this Color color) | Converts A System.Drawing.Color To RGB In Int Form - Simply Append A "#" Before This In A String For The Pure Hex.
 IsTermFullyDefined(this string text, string term, int expectedLength, string[] disallowedText) | Checks If A Term Is Fully Defined In A String - Such As Say You Have A Log Which Shows A User ID, You Can Use This To See If There's A User ID Actually There, Or It Is Empty.
 ReplaceLast(this string Source, string oldChar, string newChar) | Replaces The Last Occurance Of A String

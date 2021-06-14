@@ -144,6 +144,26 @@ namespace Libraries
 
             return false;
         }
+        
+        internal static bool FastestCaseSensitiveContains(this IEnumerable<string> input, string text)
+        {
+            if (input.Any(o => string.CompareOrdinal(o, text) == 0))
+            {
+                return true;
+            }
+
+            return false;
+        }
+        
+        internal static bool FastestCaseInsensitiveContains(this IEnumerable<string> input, string text)
+        {
+            if (input.Any(o => o.Equals(text)))
+            {
+                return true;
+            }
+
+            return false;
+        }
 
         internal static string ConvertToString(this byte[] array)
         {
